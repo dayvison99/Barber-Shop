@@ -1,0 +1,8 @@
+{
+    "name": "pagseguro/pagseguro",
+    "description": "pagseguro",
+    "type": "pagseguro/pagseguro-php-sdk",
+    "require": {
+        "pagseguro/pagseguro-php-sdk": "^5.0"
+    }
+}

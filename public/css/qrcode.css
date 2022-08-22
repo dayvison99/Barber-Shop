@@ -1,0 +1,108 @@
+.center-x {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.container {
+    margin: 2em auto;
+    position: relative;
+}
+
+.hidden-print {
+    margin: 1em auto 0;
+}
+
+#form-qr {
+    float: unset;
+    margin: auto;
+    text-align: center;
+}
+
+select.form-control {
+    width: max-content;
+    margin: auto;
+}
+
+#form-qr .linha {
+    display: flex;
+    justify-content: center;
+}
+
+#form-qr label {
+    font-size: 16px;
+}
+
+#form-qr button {
+    font-size: 12px;
+}
+
+#form-qr input {
+    float: unset;
+    font-size: 17px;
+    height: 32px;
+    margin-right: 10px;
+    width: 80px;
+}
+
+#qr-codes {
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0;
+}
+
+.qr-code {
+    text-align: center;
+}
+
+.qr-code h3 {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+@media (max-width: 1100px) {
+    #qr-codes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 786px) {
+    #qr-codes {
+        grid-template-columns: 1fr;
+    }
+    .qr-code h3 {
+        font-size: 15px;
+    }
+}
+
+@media print {
+    * {
+        -webkit-print-color-adjust: exact !important;
+        /* Chrome, Safari */
+        color-adjust: exact !important;
+        /*Firefox*/
+    }
+    .btn-primary, #form-qr {
+        display: none;
+    }
+    .pagebreak {
+        page-break-before: always;
+        page-break-after: always;
+    }
+    html {
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    .container {
+        min-width: 900px!important;
+    }
+    h1 {
+        color: black;
+    }
+    @page {
+        margin: 0;
+    }
+}

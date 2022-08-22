@@ -1,0 +1,2 @@
+[15-Jan-2022 17:38:22 America/Sao_Paulo] PHP Notice:  Undefined variable: data_cadastro in /home2/wieder14/cozinhafit.wiedercastro.com/painel/content/class/tarefas_cadastro.php on line 42
+[15-Jan-2022 17:38:22 America/Sao_Paulo] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/wieder14/cozinhafit.wiedercastro.com/painel/content/class/tarefas_cadastro.php:42) in /home2/wieder14/cozinhafit.wiedercastro.com/painel/content/class/tarefas_cadastro.php on line 74

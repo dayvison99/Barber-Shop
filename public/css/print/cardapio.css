@@ -1,0 +1,108 @@
+.center-x {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.background-img {
+    background-image: url("https://www.vcardapio.com/admin_estabelecimento/assets/arabesco.png");
+    -webkit-print-color-adjust: exact;
+    background-repeat: repeat-y;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.container {
+    min-height: 3150px;
+    margin-top: 2em;
+    position: relative;
+}
+
+.hidden-print {
+    margin: 1em auto 0;
+}
+
+.logo {
+    max-width: 200px;
+}
+
+.nome-loja {
+    color: #bc1f26;
+    display: inline;
+    font-size: 32px;
+    font-weight: bold;
+    left: 50%;
+    position: absolute;
+    text-transform: uppercase;
+    transform: translateX(-50%);
+}
+
+#categorias {
+    list-style: none;
+    padding: 0;
+    margin-top: 3em;
+}
+
+.categoria-nome {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 20px 0;
+    text-transform: uppercase;
+}
+
+.contato {
+    font-size: 20px;
+    float: right;
+    margin-top: -13px;
+    margin-right: 58px;
+    color: black;
+}
+
+.produto {
+    border-bottom: 1px solid #9b9b9b;
+    margin-bottom: 10px;
+    list-style: none;
+}
+.produto_nome {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.produto-preco {
+    float: right;
+    font-size: 18px;
+}
+
+@media print {
+    * {
+        -webkit-print-color-adjust: exact !important;
+        /* Chrome, Safari */
+        color-adjust: exact !important;
+        /*Firefox*/
+    }
+    .btn-primary {
+        display: none;
+    }
+    .pagebreak {
+        page-break-before: always;
+    }
+    /* page-break-after works, as well */
+    html {
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    .container {
+        min-width: 900px!important;
+    }
+    h1 {
+        color: black;
+    }
+    @page {
+        margin: 0;
+    }
+}

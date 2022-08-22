@@ -1,0 +1,5 @@
+[15-Jan-2022 13:08:12 America/Sao_Paulo] PHP Notice:  Undefined variable: inputExibir in /home2/wieder14/cozinhafit.wiedercastro.com/painel/content/tarefas_cadastro.php on line 63
+[15-Jan-2022 13:16:27 America/Sao_Paulo] PHP Notice:  Undefined index: idPlano in /home2/wieder14/cozinhafit.wiedercastro.com/painel/content/produtos_cadastro.php on line 294
+[15-Jan-2022 13:18:08 America/Sao_Paulo] PHP Notice:  Undefined index: idPlano in /home2/wieder14/cozinhafit.wiedercastro.com/painel/content/tarefas_cadastro.php on line 294
+[15-Jan-2022 13:19:01 America/Sao_Paulo] PHP Notice:  Undefined index: idPlano in /home2/wieder14/cozinhafit.wiedercastro.com/painel/content/tarefas_cadastro.php on line 294
+[15-Jan-2022 17:49:47 America/Sao_Paulo] PHP Notice:  Trying to access array offset on value of type null in /home2/wieder14/cozinhafit.wiedercastro.com/painel/content/tarefas_edita.php on line 17
